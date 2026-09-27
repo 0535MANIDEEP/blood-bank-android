@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Location is used to rank nearby donors and to record where a request was
+      raised. It is optional: the app is fully usable without it, and donors
+      without a location are listed last rather than hidden.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".BloodBankApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BloodBank">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.RegisterDonorActivity"
+            android:exported="false"
+            android:label="@string/title_register_donor"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.CreateRequestActivity"
+            android:exported="false"
+            android:label="@string/title_create_request"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.MatchesActivity"
+            android:exported="false"
+            android:label="@string/title_matches"
+            android:parentActivityName=".ui.MainActivity" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blood Bank</string>
+
+    <string name="title_register_donor">Register donor</string>
+    <string name="title_create_request">New request</string>
+    <string name="title_matches">Matching donors</string>
+
+    <string name="tab_dashboard">Overview</string>
+    <string name="tab_donors">Donors</string>
+    <string name="tab_requests">Requests</string>
+
+    <string name="donor_name">Full name</string>
+    <string name="donor_phone">Phone</string>
+    <string name="donor_group">Blood group</string>
+    <string name="donor_city">Area or city</string>
+    <string name="use_location">Use my current location</string>
+
+    <string name="request_group">Blood group needed</string>
+    <string name="request_units">Units needed</string>
+    <string name="request_hospital">Hospital or blood bank</string>
+    <string name="request_phone">Contact phone</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_matches">View matches</string>
+    <string name="mark_fulfilled">Mark fulfilled</string>
+    <string name="no_donors">No donors registered yet</string>
+    <string name="no_requests">No open requests</string>
+    <string name="no_matches">No compatible donors are available for this group</string>
+
+    <string name="hint_pick_group">Select a group</string>
+    <string name="err_name">Enter a name</string>
+    <string name="err_phone">Enter a phone number</string>
+    <string name="err_group">Select a blood group</string>
+    <string name="err_hospital">Enter the requesting hospital or bank</string>
+    <string name="err_units">Enter how many units are needed</string>
+    <string name="err_location">Location permission denied. The entry was saved without a location.</string>
+</resources>
